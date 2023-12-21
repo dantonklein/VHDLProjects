@@ -1,0 +1,165 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "JumpAndLink",
+					"strict" : false
+				},
+				{
+					"name" : "IsSigned",
+					"strict" : false
+				},
+				{
+					"name" : "PCSource[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCSource[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUSrcB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUSrcB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUSrcA",
+					"strict" : false
+				},
+				{
+					"name" : "RegWrite",
+					"strict" : false
+				},
+				{
+					"name" : "RegDst",
+					"strict" : false
+				},
+				{
+					"name" : "PCWrite",
+					"strict" : false
+				},
+				{
+					"name" : "PcWriteCond",
+					"strict" : false
+				},
+				{
+					"name" : "IorD",
+					"strict" : false
+				},
+				{
+					"name" : "MemRead",
+					"strict" : false
+				},
+				{
+					"name" : "MemWrite",
+					"strict" : false
+				},
+				{
+					"name" : "MemToReg",
+					"strict" : false
+				},
+				{
+					"name" : "IRWrite",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register31_26[0]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register31_26[1]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register31_26[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register31_26[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register31_26[5]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register31_26[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register20_16[1]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register20_16[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register20_16[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register20_16[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register20_16[0]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register5_0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register5_0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register5_0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register5_0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register5_0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_register5_0[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

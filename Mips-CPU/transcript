@@ -1,0 +1,304 @@
+# Compile of ram256.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of supertb.vhd was successful.
+vsim -gui work.supertb
+# vsim -gui work.supertb 
+# Start time: 22:38:44 on Apr 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.supertb(default_tb)
+# Loading work.controller_and_datapath(bhv)
+# Loading work.controller(main)
+# Loading work.datapath(bhv)
+# Loading work.reg(reg_enabled)
+# Loading work.mux2_1(bhv)
+# Loading altera_mf.altera_mf_components
+# Loading work.memory(memory_bhv)
+# Loading work.ram256(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.mux3_1(bhv1)
+# Loading work.reg(reg_not_enabled)
+# Loading work.zero_extend(bhv)
+# Loading work.registersfile(bhv)
+# Loading work.sign_extend(bhv)
+# Loading work.shiftleft2(bhv)
+# Loading work.mux4_1(bhv)
+# Loading work.alu(alu_bhv)
+# Loading work.concat(bhv)
+# Loading work.alu_control(bhv)
+add wave -position end sim:/supertb/UUT/U_CONTROLLER/*
+add wave -position end  sim:/supertb/UUT/U_DATAPATH/U_LO_REGISTER/output
+add wave -position 21  sim:/supertb/UUT/U_DATAPATH/U_REGISTERFILE/regs
+add wave -position 21  sim:/supertb/UUT/U_DATAPATH/U_ALU_CONTROL/ALUOP
+add wave -position 22  sim:/supertb/UUT/U_DATAPATH/U_ALU_CONTROL/OPSelect
+add wave -position 0  sim:/supertb/UUT/U_DATAPATH/U_ALU_CONTROL/IR5_0
+add wave -position 0  sim:/supertb/UUT/U_DATAPATH/U_INSTRUCTION_REGISTER_OUT_20_TO_16_15_TO_11_MUX/output
+add wave -position 2  sim:/supertb/UUT/U_DATAPATH/U_ALU/inputA
+add wave -position 3  sim:/supertb/UUT/U_DATAPATH/U_ALU/inputB
+add wave -position 4  sim:/supertb/UUT/U_DATAPATH/U_ALU/result
+add wave -position 4  sim:/supertb/UUT/U_DATAPATH/U_REG_A/output
+add wave -position 5  sim:/supertb/UUT/U_DATAPATH/U_REG_B/output
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 1515 ns  Iteration: 0  Instance: /supertb
+# WARNING: No extended dataflow license exists
+# **** Error: SelectedSignalQ cmd: Dataflow::MessageHandler SelectedSignalQ .main_pane.dataflow.interior.cs.body.pw.df.c sim
+# ****        invalid command name ".main_pane.dataflow.interior.cs.body.pw.df.c.nlv"
+# invalid command name ".main_pane.dataflow.interior.cs.body.pw.df.c.nlv"
+#     while executing
+# "$nlv search -exact netBundle ${sel}"
+#     (method "::vsimwidgets::Dataflow::selectsig_cmd" body line 44)
+#     invoked from within
+# "$nl selectsig_cmd SelectedSignalQ $ns "
+#     (procedure "Dataflow::MessageHandler" line 15)
+#     invoked from within
+# "Dataflow::MessageHandler SelectedSignalQ .main_pane.dataflow.interior.cs.body.pw.df.c sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position 0  sim:/supertb/UUT/U_DATAPATH/U_INSTRUCTION_REGISTER/output
+run -all
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 1515 ns  Iteration: 0  Instance: /supertb
+# Compile of controller.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controller(main)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 1515 ns  Iteration: 0  Instance: /supertb
+# Compile of controller.vhd was successful.
+add wave -position 2  sim:/supertb/UUT/U_DATAPATH/U_REGISTERFILE/read_reg1
+add wave -position 3  sim:/supertb/UUT/U_DATAPATH/U_REGISTERFILE/read_reg2
+add wave -position 6  sim:/supertb/UUT/U_DATAPATH/U_REG_A/input
+add wave -position 7  sim:/supertb/UUT/U_DATAPATH/U_REG_B/input
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controller(main)
+# Load canceled
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 1515 ns  Iteration: 0  Instance: /supertb
+# Compile of registersfile.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.registersfile(bhv)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 1515 ns  Iteration: 0  Instance: /supertb
+add wave -position 34  sim:/supertb/UUT/U_DATAPATH/LEDS
+add wave -position 35  sim:/supertb/UUT/U_DATAPATH/switches
+# Compile of ram256.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.ram256(syn)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 1515 ns  Iteration: 0  Instance: /supertb
+# Compile of ram256.vhd was successful.
+add wave -position end  sim:/supertb/UUT/U_DATAPATH/U_HI_REGISTER/output
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.ram256(syn)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 1515 ns  Iteration: 0  Instance: /supertb
+# Compile of ram256.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.ram256(syn)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 1515 ns  Iteration: 0  Instance: /supertb
+# Compile of supertb.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.supertb(default_tb)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 10015 ns  Iteration: 0  Instance: /supertb
+# Compile of supertb.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.supertb(default_tb)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20015 ns  Iteration: 0  Instance: /supertb
+add wave -position 32  sim:/supertb/UUT/U_DATAPATH/U_MEMORY/output_port
+add wave -position 5  sim:/supertb/UUT/U_DATAPATH/U_ALU/branch_taken
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20015 ns  Iteration: 0  Instance: /supertb
+add wave -position 6  sim:/supertb/UUT/U_DATAPATH/U_ALU_OUT_REG/output
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20015 ns  Iteration: 0  Instance: /supertb
+add wave -position 7  sim:/supertb/UUT/PCWriteOrPcWriteCond
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20015 ns  Iteration: 0  Instance: /supertb
+# Compile of controller_and_datapath.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controller_and_datapath(bhv)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20015 ns  Iteration: 0  Instance: /supertb
+add wave -position 1  sim:/supertb/UUT/U_DATAPATH/U_REGISTERFILE/write_data
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20015 ns  Iteration: 0  Instance: /supertb
+# Compile of controller.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controller(main)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20015 ns  Iteration: 0  Instance: /supertb
+# Compile of ram256.vhd was successful.
+# Compile of supertb.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.supertb(default_tb)
+# Loading work.ram256(syn)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20025 ns  Iteration: 0  Instance: /supertb
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20025 ns  Iteration: 0  Instance: /supertb
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20025 ns  Iteration: 0  Instance: /supertb
+# Compile of supertb.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.supertb(default_tb)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /supertb/UUT/U_DATAPATH/U_REGISTERFILE
+# ** Note: Tests completed.
+#    Time: 20025 ns  Iteration: 0  Instance: /supertb
+# Project file C:/Users/klein/Documents/school/digitaldesign/finalproject/finalproject.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# End time: 03:15:09 on Apr 21,2023, Elapsed time: 4:36:25
+# Errors: 0, Warnings: 2

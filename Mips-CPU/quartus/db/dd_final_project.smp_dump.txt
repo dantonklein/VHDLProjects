@@ -1,0 +1,19 @@
+
+State Machine - |controller|state_r
+Name state_r.Branch2 state_r.Branch1 state_r.JumpAndLink2 state_r.JumpAndLink1 state_r.jump state_r.load_word4 state_r.load_word3 state_r.load_and_store_word2 state_r.load_and_store_word1 state_r.i_type2 state_r.i_type1 state_r.r_type2 state_r.r_type1 state_r.instruction_decode state_r.instruction_fetch2 state_r.instruction_fetch1 
+state_r.instruction_fetch1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state_r.instruction_fetch2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state_r.instruction_decode 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state_r.r_type1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state_r.r_type2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state_r.i_type1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state_r.i_type2 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state_r.load_and_store_word1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state_r.load_and_store_word2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state_r.load_word3 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state_r.load_word4 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state_r.jump 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state_r.JumpAndLink1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.JumpAndLink2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.Branch1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_r.Branch2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
